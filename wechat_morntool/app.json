@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/webshell/webshell",
+    "pages/webshell/login",
+    "pages/webshell/profile",
+    "pages/qrcode/qrcode"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "morntool",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "darkmode": false,
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

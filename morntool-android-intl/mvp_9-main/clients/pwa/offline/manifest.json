@@ -1,0 +1,116 @@
+{
+  "name": "SecureFiles - 离线文件加密工具",
+  "short_name": "SecureFiles",
+  "description": "完全离线的文件加密处理工具，保护您的隐私安全",
+  "version": "1.0.0",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#10b981",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": [
+    "utilities",
+    "security",
+    "productivity"
+  ],
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "离线加密",
+      "short_name": "加密",
+      "description": "离线加密文件",
+      "url": "/encrypt",
+      "icons": [
+        {
+          "src": "icons/encrypt-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "离线解密",
+      "short_name": "解密",
+      "description": "离线解密文件",
+      "url": "/decrypt",
+      "icons": [
+        {
+          "src": "icons/decrypt-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "本地管理",
+      "short_name": "管理",
+      "description": "管理本地文件",
+      "url": "/local",
+      "icons": [
+        {
+          "src": "icons/local-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "features": [
+    "Offline First",
+    "Privacy Focused",
+    "Local Processing",
+    "Secure"
+  ],
+  "author": "SecureFiles Team",
+  "homepage_url": "https://securefiles.app"
+} 

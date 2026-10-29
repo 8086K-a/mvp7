@@ -1,0 +1,36 @@
+<view class="container">
+  <!-- 顶部装饰 -->
+  <view class="header">
+    <view class="icon-wrapper">
+      <view class="icon-bg"></view>
+      <view class="link-icon">🔗</view>
+    </view>
+    <view class="title">外部链接</view>
+    <view class="subtitle">检测到外部网址，请复制后访问</view>
+  </view>
+
+  <!-- 链接卡片 -->
+  <view class="card">
+    <view class="card-header">
+      <view class="dot"></view>
+      <text class="card-title">目标网址</text>
+    </view>
+    <view class="link-box">
+      <text class="link-text" selectable="true">{{url}}</text>
+    </view>
+  </view>
+
+  <!-- 操作按钮 -->
+  <view class="actions">
+    <button class="btn-primary" bindtap="copyUrl">
+      <text class="btn-icon">📋</text>
+      <text class="btn-text">复制链接</text>
+    </button>
+  </view>
+
+  <!-- 底部提示 -->
+  <view class="footer">
+    <view class="tip-icon">💡</view>
+    <view class="tip-text">由于微信限制，小程序无法直接打开外部链接。请复制链接后在浏览器中粘贴访问。</view>
+  </view>
+</view>

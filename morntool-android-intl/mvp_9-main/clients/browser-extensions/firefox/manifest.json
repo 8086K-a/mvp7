@@ -1,0 +1,74 @@
+{
+  "manifest_version": 2,
+  "name": "SecureFiles - 文件加密助手",
+  "version": "1.0.0",
+  "description": "安全、高效的文件加密处理工具，支持大文件处理，突破浏览器限制",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "downloads",
+    "unlimitedStorage",
+    "file://*",
+    "https://securefiles.app/*",
+    "https://*.securefiles.app/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://securefiles.app/*",
+        "https://*.securefiles.app/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "SecureFiles",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    "worker.js",
+    "crypto-worker.js",
+    "wasm/crypto.wasm",
+    "assets/*"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+E",
+        "mac": "Command+Shift+E"
+      },
+      "description": "打开 SecureFiles 加密工具"
+    }
+  },
+  "applications": {
+    "gecko": {
+      "id": "securefiles@securefiles.app",
+      "strict_min_version": "88.0"
+    }
+  },
+  "author": "SecureFiles Team",
+  "homepage_url": "https://securefiles.app"
+} 

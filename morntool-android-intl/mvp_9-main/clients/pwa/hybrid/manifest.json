@@ -1,0 +1,160 @@
+{
+  "name": "SecureFiles - 混合文件加密平台",
+  "short_name": "SecureFiles",
+  "description": "在线+离线混合模式的文件加密处理工具，最佳用户体验",
+  "version": "1.0.0",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#10b981",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": [
+    "utilities",
+    "security",
+    "productivity"
+  ],
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://securefiles.app"
+    },
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.securefiles.app",
+      "id": "com.securefiles.app"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/securefiles/id123456789"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "智能加密",
+      "short_name": "加密",
+      "description": "智能选择在线或离线加密",
+      "url": "/encrypt",
+      "icons": [
+        {
+          "src": "icons/encrypt-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "智能解密",
+      "short_name": "解密",
+      "description": "智能选择在线或离线解密",
+      "url": "/decrypt",
+      "icons": [
+        {
+          "src": "icons/decrypt-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "云端同步",
+      "short_name": "同步",
+      "description": "云端文件同步管理",
+      "url": "/sync",
+      "icons": [
+        {
+          "src": "icons/sync-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "设备管理",
+      "short_name": "设备",
+      "description": "管理多设备文件",
+      "url": "/devices",
+      "icons": [
+        {
+          "src": "icons/devices-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/hybrid-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "SecureFiles 混合模式桌面版"
+    },
+    {
+      "src": "screenshots/hybrid-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "SecureFiles 混合模式移动版"
+    }
+  ],
+  "features": [
+    "Hybrid Mode",
+    "Cloud Sync",
+    "Offline Support",
+    "Cross Platform",
+    "Smart Processing"
+  ],
+  "author": "SecureFiles Team",
+  "homepage_url": "https://securefiles.app"
+} 

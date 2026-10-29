@@ -1,0 +1,71 @@
+{
+  "name": "@securefiles/types",
+  "version": "1.0.0",
+  "description": "SecureFiles 类型定义库",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext .ts,.tsx",
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf dist"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "typescript",
+    "types",
+    "definitions",
+    "interfaces",
+    "cross-platform"
+  ],
+  "author": "SecureFiles Team",
+  "license": "MIT",
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "rollup": "^4.0.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "rollup-plugin-dts": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "rimraf": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./crypto": {
+      "import": "./dist/crypto.esm.js",
+      "require": "./dist/crypto.js",
+      "types": "./dist/crypto.d.ts"
+    },
+    "./file": {
+      "import": "./dist/file.esm.js",
+      "require": "./dist/file.js",
+      "types": "./dist/file.d.ts"
+    },
+    "./api": {
+      "import": "./dist/api.esm.js",
+      "require": "./dist/api.js",
+      "types": "./dist/api.d.ts"
+    },
+    "./ui": {
+      "import": "./dist/ui.esm.js",
+      "require": "./dist/ui.js",
+      "types": "./dist/ui.d.ts"
+    }
+  }
+} 
